@@ -1,7 +1,6 @@
 {
   "name": "consulta-api",
-  "homepage": "https://rogerdesenvolvedorweb.com.br/react/consulta-api/",
-  "version": "0.1.0",
+   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.3.0",
