@@ -1,4 +1,4 @@
-import React ,{useState,useRef,useEffect} from 'react';
+import React ,{useState,useRef} from 'react';
 import { Container,Card,Row,Col,Button,Navbar,InputGroup } from 'react-bootstrap';
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
@@ -48,15 +48,11 @@ function Home() {
 			
         },
         (error) => {
-          const resMessage =
-            (error.response &&
-              error.response.data &&
-              error.response.data.message) ||
-            error.message ||
-            error.toString();
+         
+            
             console.log( error.response.data);
          // setLoading(false);
-         if( error.response.data==null ||  error.response.data==undefined){
+         if( error.response.data===null ||  error.response.data===undefined){
             setMensagem(error.response);
          }else
          setMensagem( error.response.data);
